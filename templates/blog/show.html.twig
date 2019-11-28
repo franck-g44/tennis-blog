@@ -6,8 +6,11 @@
         <h2>{{ article.title }}</h2>
             <div class="metadata">Ecrit le {{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i') }}
                      dans la catégorie News.</div>
+                 <hr>    
             <div class="content">
                 <img src="{{ article.image }}" alt="">
+                
+                <hr>
                 {{ article.content | raw }}
 
             </div>
